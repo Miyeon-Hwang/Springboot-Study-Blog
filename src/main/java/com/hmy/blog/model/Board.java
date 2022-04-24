@@ -46,7 +46,7 @@ public class Board {
 	@JoinColumn(name="userId") // userId라는 field값으로 DB에 생성됨.
 	private User user; // 자바는 오브젝트로 저장하지만 DB는 오브젝트를 저장할 수 없으므로 자동으로 Foreign Key로 저장하고 User table을 참조하도록 생성됨
 	
-	@OneToMany(mappedBy = "board", fetch = FetchType.EAGER) // 하나의 board는 여러개의 reply를 가지므로 Board table에 FK로 reply column을 생성하지 x. mappedBy로 연관관계의 주인을 설정
+	@OneToMany(mappedBy = "board", fetch = FetchType.EAGER) // 하나의 board는 여러개의 reply를 가지므로 Board table에 FK로 reply column을 생성하지 x. mappedBy로 연관관계의 주인을 설정(Reply 엔티티 board와 연관)
 	private List<Reply> reply;
 	
 	@CreationTimestamp

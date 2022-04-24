@@ -1,4 +1,4 @@
-package com.hmy.demo;
+package com.hmy.blog;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
