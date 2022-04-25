@@ -30,13 +30,13 @@ public class User {
 	@GeneratedValue(strategy = GenerationType.IDENTITY) // 넘버링 전략. IDENTITY는 프로젝트에 연결된 DB의 넘버링 전략을 따르겠다
 	private int id;
 	
-	@Column(nullable = false, length = 30)
+	@Column(nullable = false, length = 30, unique = true)
 	private String username;
 	
 	@Column(nullable = false)
 	private String password;
 	
-	@Column(nullable = false, length = 30, unique = true)
+	@Column(nullable = false, length = 30)
 	private String email;
 	
 	//@ColumnDefault("'user'")
