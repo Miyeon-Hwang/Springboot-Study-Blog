@@ -19,10 +19,10 @@
 	<dependencies>
 		<!-- Start additional library -->
 		<!-- 시큐리티 태그 라이브러리 -->
-<!-- 		<dependency> -->
-<!-- 		  <groupId>org.springframework.security</groupId> -->
-<!-- 		  <artifactId>spring-security-taglibs</artifactId> -->
-<!-- 		</dependency> -->
+		<dependency>
+		  <groupId>org.springframework.security</groupId>
+		  <artifactId>spring-security-taglibs</artifactId>
+		</dependency>
 		
 		<!-- JSP 템플릿 엔진 -->
 		<dependency>
@@ -40,10 +40,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
-<!-- 		<dependency> -->
-<!-- 			<groupId>org.springframework.boot</groupId> -->
-<!-- 			<artifactId>spring-boot-starter-security</artifactId> -->
-<!-- 		</dependency> -->
+		<dependency> 
+		<!-- 첫진입시 로그인화면으로 진입하게 만듦 -->
+		<!-- id는 user, password는 console에 찍히는 값으로 로그인을 해야 app의 메인화면에 진입 -->
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>

@@ -2,7 +2,7 @@
 <%@ include file="../layout/header.jsp"%>
 
 <div class="container">
-	<form action="/action_page.php">
+	<form>
 		<div class="form-group">
 			<label for="username">Username</label> <input type="email" class="form-control" placeholder="Enter username" id="username">
 		</div>
@@ -13,7 +13,9 @@
 			<label class="form-check-label"> <input class="form-check-input" type="checkbox"> Remember me
 			</label>
 		</div>
-		<button type="submit" class="btn btn-primary">Log in</form>
+	</form>
+	<button id="btn-login" class="btn btn-primary">Log In</button>
 </div>
 
+<script src="js/user.js"></script>
 <%@ include file="../layout/footer.jsp"%>
